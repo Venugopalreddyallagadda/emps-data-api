@@ -17,6 +17,7 @@ public class Controller {
 
     @PostMapping("/createEmployee")
     public Employee saveEmployee(@RequestBody Employee employee) {
+        System.out.println("insdie saveEmployee method");
         return employeeService.createEmployee(employee);
     }
 }
